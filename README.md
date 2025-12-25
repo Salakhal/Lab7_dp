@@ -43,3 +43,19 @@ Refus de la commande (DELETE) pour l'utilisateur `app_user`. (Erreur 1142), conf
 ![Ex3](https://github.com/user-attachments/assets/2809eead-0c42-42a2-8d86-55ceeb0a0282)
 
 
+## 👤 Auteur
+
+* **École Normale Supérieure de Marrakech**
+  
+* **Réalisé par :** SALMA LAKHAL
+  
+* **Filière  :** CLE_INFO_S5
+  
+* **Date :**   Decembre /2025 
+  
+* **Encadré par :** Pr. Mohamed LACHGAR
+
+* **Module :** `BASE DE DONNEE `
+
+
+
