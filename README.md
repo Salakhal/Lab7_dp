@@ -29,15 +29,17 @@ Création d'un utilisateur `app_user` avec des droits restreints :
 ## 📸 Captures d'écran des tests
 
 ### 1. Test d'Isolation (READ COMMITTED)
-Hna f had t-sswira, kiban kifach l-solde t-beddel f l-Session 1 mn **800.00** l **900.00** ghir hit l-Session 2 daret `COMMIT`. Hadchi kiy-tebet l-nivo d'isolation `READ COMMITTED`.
+Le solde passe de **800.00** à **900.00** dans la Session 1 après le COMMIT de la Session 2, confirmant le niveau d'isolation.
 ![Ex1](https://github.com/user-attachments/assets/dd2ab517-4e1e-43c6-b1cc-c0f537582560)
 
 
 ### 2. Démonstration du blocage par verrou (Lock)
-Hna l-Session 2 daret `UPDATE` 3la Alice walakin t-bloquat hit l-Session 1 dayra `FOR UPDATE`. F l-lakher t-3tat l-erreur `Lock wait timeout exceeded`.
+La Session 2 est bloquée par le `FOR UPDATE`. de la Session 1, entraînant l'erreur `Lock wait timeout exceeded`.
 ![Ex2](https://github.com/user-attachments/assets/63721078-0556-44ee-90dc-c5ea7cb86090)
 
 
 ### 3. Démonstration de la sécurité (Refus de permission)
-Hna jerebna n-ms-hou (DELETE) chi row b l-user `app_user`. MySQL m-n3atna (ERROR 1142) hit had l-user 3ndu ghir s-salahiyat dyal l-lecture w l-ktaba, machi l-mes-h.
+Refus de la commande (DELETE) pour l'utilisateur `app_user`. (Erreur 1142), confirmant la restriction des privilèges.
 ![Ex3](https://github.com/user-attachments/assets/2809eead-0c42-42a2-8d86-55ceeb0a0282)
+
+
